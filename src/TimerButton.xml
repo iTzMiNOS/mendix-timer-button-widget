@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="coinapp.timerbutton.TimerButton" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Timer Button</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Events">
+            <property key="timerAction" type="action" required="true">
+                <caption>Timer Action</caption>
+                <description>Action on Timer Cycle</description>
+            </property>
+            <property key="onClickEvent" type="action" required="true">
+                <caption>onClick</caption>
+                <description>Action on Click</description>
+            </property>
+            <property key="onClickName" type="string" required="true" defaultValue="Action">
+                <caption>onClick</caption>
+                <description>Action on Click</description>
+            </property>
+            <property key="duration" type="integer" required="true" defaultValue="30">
+                <caption>Execute Every (s)</caption>
+                <description>Duration between executions</description>
+            </property>
+            <property key="executeFlag" type="attribute" required="true">
+                <caption>Execution Flag</caption>
+                <description>Execution Flag Description</description>
+                <attributeTypes>
+                    <attributeType name="Boolean" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
